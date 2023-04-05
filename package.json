@@ -1,0 +1,23 @@
+{
+  "name": "latihan-restapi",
+  "version": "1.0.0",
+  "description": "latihan restapi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wrathboyx/latihanrestapi.git"
+  },
+  "keywords": [
+    "restapi",
+    "nodejs"
+  ],
+  "author": "wrath",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wrathboyx/latihanrestapi/issues"
+  },
+  "homepage": "https://github.com/wrathboyx/latihanrestapi#readme"
+}
