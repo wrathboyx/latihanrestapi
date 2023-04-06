@@ -4,5 +4,5 @@ var response = require("./res");
 var connection = require("./connect");
 
 exports.index = function (req, res) {
-  response.ok("Applikasi Rest API ku berjalan");
+  response.ok("Applikasi Rest API ku berjalan", res);
 };
