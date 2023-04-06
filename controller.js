@@ -61,8 +61,8 @@ exports.ubahMahasiswa = function (req, res) {
   var jurusan = req.body.jurusan;
 
   connection.query(
-    "UPDATE mahasiswa SET nim=?, nama=?, jurusan=?",
-    [nim, nama, jurusan],
+    "UPDATE mahasiswa SET nim=?, nama=?, jurusan=? WHERE id_mahasiswa=?",
+    [nim, nama, jurusan, id],
     function (error, rows, fields) {
       if (error) {
         console.log(error);
