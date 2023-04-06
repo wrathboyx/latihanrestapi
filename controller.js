@@ -53,7 +53,7 @@ exports.tambahMahasiswa = function (req, res) {
   );
 };
 
-// Mengubah data berdasarkan ID
+// Mengubah data berdasarkan ID (PUT)
 exports.ubahMahasiswa = function (req, res) {
   var id = req.body.id_mahasiswa;
   var nim = req.body.nim;
@@ -68,6 +68,22 @@ exports.ubahMahasiswa = function (req, res) {
         console.log(error);
       } else {
         response.ok("Data Berhasil diubah", res);
+      }
+    }
+  );
+};
+
+// Menghapus data berdasarkan ID (DELETE)
+exports.hapusMahasiswa = function (req, res) {
+  var id = req.body.id_mahasiswa;
+  connection.query(
+    "DELETE FROM mahasiswa WHERE = id_mahasiswa=?",
+    [id],
+    function (error, rows, fields) {
+      if (error) {
+        console.log(error);
+      } else {
+        response.ok("Data Berhasil dihapus", res);
       }
     }
   );
