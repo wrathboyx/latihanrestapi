@@ -17,7 +17,7 @@ exports.register = function (req, res) {
   };
 
   // check email apakah sudah terdaftar atau belum
-  var query = "SELECT email FROM ?? WHERE ??";
+  var query = "SELECT email FROM ?? WHERE ??=?";
   var table = ["user", "email", post.email];
 
   query = mysql.format(query, table);
