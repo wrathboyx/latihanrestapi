@@ -77,7 +77,7 @@ exports.ubahMahasiswa = function (req, res) {
 exports.hapusMahasiswa = function (req, res) {
   var id = req.body.id_mahasiswa;
   connection.query(
-    "DELETE FROM mahasiswa WHERE = id_mahasiswa=?",
+    "DELETE FROM mahasiswa WHERE id_mahasiswa=?",
     [id],
     function (error, rows, fields) {
       if (error) {
