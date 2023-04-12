@@ -95,5 +95,5 @@ exports.login = function (req, res) {
 };
 
 exports.secretPage = function (req, res) {
-  response.ok("Halaman ini hanya untuk user dengan role = 2");
+  response.ok("Halaman ini hanya untuk user dengan role = 2", res);
 };

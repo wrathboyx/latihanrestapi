@@ -8,6 +8,6 @@ router.post("/api/v1/register", auth.register);
 router.post("/api/v1/login", auth.login);
 
 // Alamat yang perlu otorisasi
-router.get("/api/v1/secretpage", verifikasi(2), auth.secretPage);
+router.get("/api/v1/secretpage", verifikasi(), auth.secretPage);
 
 module.exports = router;
